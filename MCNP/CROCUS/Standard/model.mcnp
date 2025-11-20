@@ -1,0 +1,350 @@
+$ CROCUS with Water Height Control - Camden Blake 
+1 3 0.0602611 -12 -18 U 1 IMP:N=1.0 $ UO2 Pin Bottom 
+2 1 0.070635265 12 -13 -17 U 1 IMP:N=1.0 $ UO2 Pin Fuel 
+3 9 1.64E-4 13 -14 -17 U 1 IMP:N=1.0 $ UO2 Pin Filler Gas 
+4 4 0.0500614 12 -14 17 -18 U 1 IMP:N=1.0 $ UO2 Pin Clad 
+5 3 0.0602611 14 -16 -18 U 1 IMP:N=1.0 $ UO2 Pin Top 
+6 7 0.0602611 3 -4 18 U 1 IMP:N=1.0 $ UO2 Pin Lower Grid Bottom 
+7 8 0.0463334 4 -5 18 U 1 IMP:N=1.0 $ UO2 Pin Lower Grid Cadmium 
+8 7 0.0602611 5 -6 18 U 1 IMP:N=1.0 $ UO2 Pin Lower Grid Top 
+9 7 0.0602611 7 -8 18 U 1 IMP:N=1.0 $ UO2 Pin Upper Grid Bottom 
+10 8 0.0463334 8 -9 18 U 1 IMP:N=1.0 $ UO2 Pin Upper Grid Cadmium 
+11 7 0.0602611 9 -10 18 U 1 IMP:N=1.0 $ UO2 Pin Upper Grid Top 
+12 6 0.10013670000000001 2 -3 18 U 1 IMP:N=1.0 $ UO2 Pin Lower Moderator 
+13 6 0.10013670000000001 -11 6 18 U 1 IMP:N=1.0 $ UO2 Pin Middle Moderator 
+14 10 5.0469999999999996E-5 11 -7 18 U 1 IMP:N=1.0 $ UO2 Pin Middle Air 
+15 10 5.0469999999999996E-5 -16 10 18 U 1 IMP:N=1.0 $ UO2 Pin Upper Air 
+16 3 0.0602611 -12 -20 U 2 IMP:N=1.0 $ Umet Pin Bottom 
+17 2 0.047253460000000004 12 -13 -19 U 2 IMP:N=1.0 $ Umet Pin Fuel 
+18 9 1.64E-4 13 -15 -19 U 2 IMP:N=1.0 $ Umet Pin Filler Gas 
+19 5 0.0517799 12 -15 19 -20 U 2 IMP:N=1.0 $ Umet Pin Clad 
+20 3 0.0602611 15 -16 -20 U 2 IMP:N=1.0 $ Umet Pin Top 
+21 7 0.0602611 3 -4 20 U 2 IMP:N=1.0 $ Umet Pin Lower Grid Bottom 
+22 8 0.0463334 4 -5 20 U 2 IMP:N=1.0 $ Umet Pin Lower Grid Cadmium 
+23 7 0.0602611 5 -6 20 U 2 IMP:N=1.0 $ Umet Pin Lower Grid Top 
+24 7 0.0602611 7 -8 20 U 2 IMP:N=1.0 $ Umet Pin Upper Grid Bottom 
+25 8 0.0463334 8 -9 20 U 2 IMP:N=1.0 $ Umet Pin Upper Grid Cadmium 
+26 7 0.0602611 9 -10 20 U 2 IMP:N=1.0 $ Umet Pin Upper Grid Top 
+27 6 0.10013670000000001 2 -3 20 U 2 IMP:N=1.0 $ Umet Pin Lower Moderator 
+28 6 0.10013670000000001 -11 6 20 U 2 IMP:N=1.0 $ Umet Pin Middle Moderator 
+29 10 5.0469999999999996E-5 11 -7 20 U 2 IMP:N=1.0 $ Umet Pin Middle Air 
+30 10 5.0469999999999996E-5 -16 10 20 U 2 IMP:N=1.0 $ Umet Pin Upper Air 
+31 7 0.0602611 3 -4 U 3 IMP:N=1.0 $ Umet Empty Pin Lower Grid Bottom 
+32 8 0.0463334 4 -5 U 3 IMP:N=1.0 $ Umet Empty Pin Lower Grid Cadmium 
+33 7 0.0602611 5 -6 U 3 IMP:N=1.0 $ Umet Empty Pin Lower Grid Top 
+34 7 0.0602611 7 -8 U 3 IMP:N=1.0 $ Umet Empty Pin Upper Grid Bottom 
+35 8 0.0463334 8 -9 U 3 IMP:N=1.0 $ Umet Empty Pin Upper Grid Cadmium 
+36 7 0.0602611 9 -10 U 3 IMP:N=1.0 $ Umet Empty Pin Upper Grid Top 
+37 6 0.10013670000000001 2 -3 U 3 IMP:N=1.0
+     $ Umet Empty Pin Lower Moderator 
+38 6 0.10013670000000001 -11 6 U 3 IMP:N=1.0
+     $ Umet Empty Pin Middle Moderator 
+39 10 5.0469999999999996E-5 11 -7 U 3 IMP:N=1.0 $ Umet Empty Pin Middle Air 
+40 10 5.0469999999999996E-5 -16 10 U 3 IMP:N=1.0 $ Umet Empty Pin Upper Air 
+41 7 0.0602611 -30 32 33 -31 -34 36 -37 35 1 -2 IMP:N=1.0
+     $ Non-Lattice Base Plate 
+42 7 0.0602611 ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97) (-98:99:-100:101) (-102:103:-104:105)
+     (-106:107:-108:109) (-110:111:-112:113):(-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72
+     -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85)) (-38 40 41 -39 -42 44 -45 43 3 -4) IMP:N=1.0 $ Non-Lattice Lower Grid Bottom 
+43 8 0.0463334 ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97) (-98:99:-100:101) (-102:103:-104:105)
+     (-106:107:-108:109) (-110:111:-112:113):(-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72
+     -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85)) (-38 40 41 -39 -42 44 -45 43 4 -5) IMP:N=1.0 $ Non-Lattice Lower Grid Cadmium 
+44 7 0.0602611 ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97) (-98:99:-100:101) (-102:103:-104:105)
+     (-106:107:-108:109) (-110:111:-112:113):(-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72
+     -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85)) (-38 40 41 -39 -42 44 -45 43 5 -6) IMP:N=1.0 $ Non-Lattice Lower Grid Top 
+45 7 0.0602611 ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97) (-98:99:-100:101) (-102:103:-104:105)
+     (-106:107:-108:109) (-110:111:-112:113):(-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72
+     -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85)) (-46 48 49 -47 -50 52 -53 51 7 -8) IMP:N=1.0 $ Non-Lattice Upper Grid Bottom 
+46 8 0.0463334 ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97) (-98:99:-100:101) (-102:103:-104:105)
+     (-106:107:-108:109) (-110:111:-112:113):(-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72
+     -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85)) (-46 48 49 -47 -50 52 -53 51 8 -9) IMP:N=1.0 $ Non-Lattice Upper Grid Cadmium 
+47 7 0.0602611 ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97) (-98:99:-100:101) (-102:103:-104:105)
+     (-106:107:-108:109) (-110:111:-112:113):(-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72
+     -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85)) (-46 48 49 -47 -50 52 -53 51 9 -10) IMP:N=1.0 $ Non-Lattice Upper Grid Top 
+48 6 0.10013670000000001 (-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72 -73:74 -75 76
+     -77:78 -79 80 -81:82 -83 84 -85) 2 -3 IMP:N=1.0
+     $ Between Lattice Lower Moderator 
+49 6 0.10013670000000001 (-54:55:-56:57) (-58:59:-60:61) (-62:63:-64:65) (-66:67:-68:69) (70 -71 72 -73:74 -75 76
+     -77:78 -79 80 -81:82 -83 84 -85) -11 6 IMP:N=1.0
+     $ Between Lattice Middle Moderator 
+50 10 5.0469999999999996E-5 (-54:55:-56:57) (-58:59:-60:61)
+     (-62:63:-64:65) (-66:67:-68:69) (70 -71 72 -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85) 11 -7 IMP:N=1.0 $ Between Lattice Middle Air 
+51 10 5.0469999999999996E-5 (-54:55:-56:57) (-58:59:-60:61)
+     (-62:63:-64:65) (-66:67:-68:69) (70 -71 72 -73:74 -75 76 -77:78 -79 80 -81:82 -83 84 -85) -16 10 IMP:N=1.0 $ Between Lattice Upper Air 
+52 6 0.10013670000000001 (30:-32:-33:31:34:-36:37:-35) -21 -2 1 IMP:N=1.0 $ Baseplate Outer Moderator 
+53 6 0.10013670000000001 (38:-40:-41:39:42:-44:45:-43:-3:6) ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97)
+     (-98:99:-100:101) (-102:103:-104:105) (-106:107:-108:109) (-110:111:-112:113)) -21 2 -11
+     IMP:N=1.0 $ Outer Moderator 
+54 10 5.0469999999999996E-5 (46:-48:-49:47:50:-52:53:-51:-7:10) ((-86:87:-88:89) (-90:91:-92:93) (-94:95:-96:97)
+     (-98:99:-100:101) (-102:103:-104:105) (-106:107:-108:109) (-110:111:-112:113)) -21 -16 11 IMP:N=1.0 $ Outer Air 
+55 0 22 -23 24 -25 U 4 TRCL (0.9185 0.9185 0.0) LAT 1 FILL -10:11 -10:11
+     0:0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 IMP:N=1.0
+     $ UO2 Lattice Pin Cell 
+56 0 (54 -55 56 -57:58 -59 60 -61:62 -63 64 -65:66 -67 68 -69) 2 -16 FILL 4 IMP:N=1.0 $ UO2 Lattice 
+57 0 26 -27 28 -29 U 5 TRCL (1.4585 1.4585 0.0) LAT 1 FILL -10:11 -10:11
+     0:0 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2
+     2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3
+     3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 2 2 2 2
+     2 2 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 2 2 2 2 2 3 3
+     3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 3 3 3
+     2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 3 3 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+     3 3 3 2 2 2 3 3 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 3 3 2 2 2 3 3 3
+     3 3 3 3 3 3 3 3 3 3 3 2 2 2 3 3 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2
+     3 3 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 3 3 3 2 2 2 3 3 3 3 3 3 3 3
+     3 3 3 3 2 2 2 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 2 2
+     2 2 3 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2
+     3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2
+     2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3
+     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 IMP:N=1.0
+     $ U metal Lattice Pin Cell 
+58 0 (-70:71:-72:73) (-74:75:-76:77) (-78:79:-80:81) (-82:83:-84:85) (86 -87 88 -89:90 -91 92 -93:94 -95 96 -97:98 -99
+     100 -101:102 -103 104 -105:106 -107 108 -109:110 -111 112 -113) 2 -16 FILL 5 IMP:N=1.0 $ U Metal Lattice 
+999 0 -1:16:21 IMP:N=0.0 $ Outer Void 
+
+1 PZ 0.0 $ Tank Bottom 
+2 PZ 3.0 $ Base Plate Top 
+3 PZ 5.15 $ Lower Grid Bottom Bottom 
+4 PZ 5.65 $ Lower Grid Bottom Top 
+5 PZ 5.7 $ Lower Grid Top Bottom 
+6 PZ 6.2 $ Lower Grid Top Top 
+7 PZ 106.2 $ Upper Grid Bottom Bottom 
+8 PZ 106.7 $ Upper Grid Bottom Top 
+9 PZ 106.75 $ Upper Grid Top Bottom 
+10 PZ 108.25 $ Upper Grid Top Top 
+11 PZ 102.21000000000001 $ Water Top 
+12 PZ 5.7 $ Fuel Bottom 
+13 PZ 105.7 $ Fuel Top 
+14 PZ 106.2 $ UO2 Fill Gas Top 
+15 PZ 107.17 $ UMET Fill Gas Top 
+16 PZ 123.0 $ Tank Top 
+17 CZ 0.526 $ UO2 Pin Fuel 
+18 CZ 0.63 $ UO2 Pin Clad 
+19 CZ 0.85 $ UMET Pin Fuel 
+20 CZ 0.965 $ UMET Pin Clad 
+21 CZ 65.0 $ Tank 
+22 PX -0.9185 $ UO2 Pin bound 
+23 PX 0.9185 $ UO2 Pin bound 
+24 PY -0.9185 $ UO2 Pin bound 
+25 PY 0.9185 $ UO2 Pin bound 
+26 PX -1.4585 $ U_metal Pin bound 
+27 PX 1.4585 $ U_metal Pin bound 
+28 PY -1.4585 $ U_metal Pin bound 
+29 PY 1.4585 $ U_metal Pin bound 
+30 PY 36.0 $ Base Plate N 
+31 PX 36.0 $ Base Plate E 
+32 PY -36.0 $ Base Plate S 
+33 PX -36.0 $ Base Plate W 
+34 P 1.0 1.0 0.0 50.91168824543143 $ Base Plate NE 
+35 P -1.0 1.0 0.0 -50.91168824543143 $ Base Plate SE 
+36 P 1.0 1.0 0.0 -50.91168824543143 $ Base Plate SW 
+37 P -1.0 1.0 0.0 50.91168824543143 $ Base Plate NW 
+38 PY 38.0 $ Lower Grid N 
+39 PX 38.0 $ Lower Grid E 
+40 PY -38.0 $ Lower Grid S 
+41 PX -38.0 $ Lower Grid W 
+42 P 1.0 1.0 0.0 53.74011537017761 $ Lower Grid NE 
+43 P -1.0 1.0 0.0 -53.74011537017761 $ Lower Grid SE 
+44 P 1.0 1.0 0.0 -53.74011537017761 $ Lower Grid SW 
+45 P -1.0 1.0 0.0 53.74011537017761 $ Lower Grid NW 
+46 PY 42.0 $ Upper Grid N 
+47 PX 42.0 $ Upper Grid E 
+48 PY -42.0 $ Upper Grid S 
+49 PX -42.0 $ Upper Grid W 
+50 P 1.0 1.0 0.0 59.396969619669996 $ Upper Grid NE 
+51 P -1.0 1.0 0.0 -59.396969619669996 $ Upper Grid SE 
+52 P 1.0 1.0 0.0 -59.396969619669996 $ Upper Grid SW 
+53 P -1.0 1.0 0.0 59.396969619669996 $ Upper Grid NW 
+54 PX -5.511
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 1 lower plane 
+55 PX 5.511
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 1 upper plane 
+56 PY -20.207
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 2 lower plane 
+57 PY 20.207
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 2 upper plane 
+58 PX -20.207
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 1 lower plane 
+59 PX 20.207
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 1 upper plane 
+60 PY -5.511
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 2 lower plane 
+61 PY 5.511
+     $ Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 2 upper plane 
+62 PX -11.022
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 1 lower plane 
+63 PX 11.022
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 1 upper plane 
+64 PY -16.533
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 2 lower plane 
+65 PY 16.533
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 2 upper plane 
+66 PX -16.533
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 1 lower plane 
+67 PX 16.533
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 1 upper plane 
+68 PY -11.022
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 2 lower plane 
+69 PY 11.022
+     $ Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 2 upper plane 
+70 PX -5.834
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 1 lower plane 
+71 PX 5.834
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 1 upper plane 
+72 PY -20.418999999999997
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 2 lower plane 
+73 PY 20.418999999999997
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 1 - axis 2 upper plane 
+74 PX -20.418999999999997
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 1 lower plane 
+75 PX 20.418999999999997
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 1 upper plane 
+76 PY -5.834
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 2 lower plane 
+77 PY 5.834
+     $ Outer Inner Fuel - Cruciform Prism - layer 0 - arm 2 - axis 2 upper plane 
+78 PX -11.668
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 1 lower plane 
+79 PX 11.668
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 1 upper plane 
+80 PY -17.502
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 2 lower plane 
+81 PY 17.502
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 1 - axis 2 upper plane 
+82 PX -17.502
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 1 lower plane 
+83 PX 17.502
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 1 upper plane 
+84 PY -11.668
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 2 lower plane 
+85 PY 11.668
+     $ Outer Inner Fuel - Cruciform Prism - layer 1 - arm 2 - axis 2 upper plane 
+86 PX -14.584999999999999
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 1 - axis 1 lower plane 
+87 PX 14.584999999999999
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 1 - axis 1 upper plane 
+88 PY -32.086999999999996
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 1 - axis 2 lower plane 
+89 PY 32.086999999999996
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 1 - axis 2 upper plane 
+90 PX -32.086999999999996
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 2 - axis 1 lower plane 
+91 PX 32.086999999999996
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 2 - axis 1 upper plane 
+92 PY -14.584999999999999
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 2 - axis 2 lower plane 
+93 PY 14.584999999999999
+     $ Outer Outer Fuel - Cruciform Prism - layer 0 - arm 2 - axis 2 upper plane 
+94 PX -17.502
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 1 - axis 1 lower plane 
+95 PX 17.502
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 1 - axis 1 upper plane 
+96 PY -29.169999999999998
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 1 - axis 2 lower plane 
+97 PY 29.169999999999998
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 1 - axis 2 upper plane 
+98 PX -29.169999999999998
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 2 - axis 1 lower plane 
+99 PX 29.169999999999998
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 2 - axis 1 upper plane 
+100 PY -17.502
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 2 - axis 2 lower plane 
+101 PY 17.502
+     $ Outer Outer Fuel - Cruciform Prism - layer 1 - arm 2 - axis 2 upper plane 
+102 PX -20.418999999999997
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 1 - axis 1 lower plane 
+103 PX 20.418999999999997
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 1 - axis 1 upper plane 
+104 PY -26.253
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 1 - axis 2 lower plane 
+105 PY 26.253
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 1 - axis 2 upper plane 
+106 PX -26.253
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 2 - axis 1 lower plane 
+107 PX 26.253
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 2 - axis 1 upper plane 
+108 PY -20.418999999999997
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 2 - axis 2 lower plane 
+109 PY 20.418999999999997
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 - arm 2 - axis 2 upper plane 
+110 PX -23.336
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 square - axis 1 lower plane 
+111 PX 23.336
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 square - axis 1 upper plane 
+112 PY -23.336
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 square - axis 2 lower plane 
+113 PY 23.336
+     $ Outer Outer Fuel - Cruciform Prism - layer 2 square - axis 2 upper plane 
+
+M1
+     92235.00c   4.30565E-4
+      8016.00c   0.0470902
+     92238.00c   0.0231145 
+M2
+     92235.00c   4.5316E-4
+     92238.00c   0.0468003 
+M3   13027.00c   0.0602611 
+M4   13027.00c   0.0500614 
+M5   13027.00c   0.0517799 
+M6
+     1001.00c   0.0667578
+     8016.00c   0.0333789 
+M7  13027.00c   0.0602611 
+M8
+     48106.00c   5.768508299999999E-4
+     48108.00c   4.11440592E-4
+     48110.00c   0.00577777498
+     48111.00c   0.00592835853
+     48112.00c   0.011170519406
+     48113.00c   0.0056651848179999995
+     48114.00c   0.013322705835999999
+     48116.00c   0.003480565008 
+M9    2004.00c   1.64E-4 
+M10
+      7014.00c   4.14E-5
+      8016.00c   9.07E-6 
+MT6 h-h2o.40t
+PRDMP 1e5 1e5 1 1 0 $ Don't print or dump till the end, write mctal, only keep one dump
+KCODE 1000000.0 1.0 50.0 650.0 
+KSRC 0.9185 0.9185 6.7 -0.9185 0.9185 6.7 0.9185 -0.9185 6.7 -0.9185 -0.9185
+     6.7 
+FC14 Flux vs Position
+FMESH14:n GEOM=xyz ORIGIN= -36 -36 5.7
+          imesh= 36     iints= 500
+          jmesh= 36     jints= 500
+          kmesh= 105.7  kints= 100
+          emesh= 0.625e-6 20
+          out= xdmf
+FC24 UO2 Pin Flux
+FMESH24:n GEOM=xyz ORIGIN= -20.207 -20.207 5.7
+          imesh= 20.207 iints= 22
+          jmesh= 20.207 jints= 22
+          kmesh= 105.7
+          emesh= 0.625e-6 20
+          out= xdmf
+FC34 UMET Pin Flux
+FMESH34:n GEOM=xyz ORIGIN= -32.087 -32.087 5.7
+          imesh= 32.087 iints= 21
+          jmesh= 32.087 jints= 21
+          kmesh= 105.7
+          emesh= 0.625e-6 20
+          out= xdmf
+FC44 Flux Spectrum (Probably a better way to do this)
+FMESH44:n GEOM=xyz ORIGIN= -36 -36 5.7
+          imesh= 36    
+          jmesh= 36    
+          kmesh= 105.7
+          emesh= 1e-11 127log 20
+          out= xdmf

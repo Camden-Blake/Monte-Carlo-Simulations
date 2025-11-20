@@ -1,0 +1,18 @@
+# Ignore everything
+**
+
+# Allow gitignore files (Probably not necessary but I think I needed it for first commit)
+!.gitignore
+
+# Allow directories for traversal
+!*/
+
+# Allow inputs
+!model.mcnp
+!model.xml
+
+# Allow submit scripts
+!*.slurm
+
+# Allow Python scripts
+!*.py
