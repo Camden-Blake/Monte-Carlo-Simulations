@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import re
 import file_read_backwards as frb
 import h5py as h5
@@ -5,12 +7,13 @@ import subprocess
 import numpy as np
 import os
 
-import openmc
-
 from dataclasses import dataclass, field
 from typing import Dict, Generic, TypeVar
+from types import SimpleNamespace
 from pathlib import Path
 from collections import defaultdict
+
+import openmc
 
 ### General Helpers
 unit_to_seconds = {
@@ -72,6 +75,7 @@ class Spectrum:
 @dataclass
 class Profile:
     """Holds the profile data from a single tally."""
+    identifier: str
     e_grid: np.ndarray
     x_grid: np.ndarray
     y_grid: np.ndarray
@@ -246,10 +250,14 @@ def read_openmc_spectrum(path:Path, identifier:str) -> Spectrum:
     normalize_to_lethargy(spectrum)
     return spectrum
 
-def _read_openmc_profile(tally: openmc.Tally) -> Profile:
-    energy_filter = tally.find_filter(openmc.EnergyFilter)
+def _read_openmc_profile(tally: openmc.Tally, identifier: str) -> Profile:
+    try:
+        energy_filter = tally.find_filter(openmc.EnergyFilter)
+    except ValueError:
+        energy_filter = SimpleNamespace(values = np.array([10**-5, 2*10**6])) # This is just a catch to cover the 'full' energy range
     mesh_info = OpenMCMesh(tally.find_filter(openmc.MeshFilter).mesh)
     profile = Profile(
+        identifier = identifier,
         e_grid = energy_filter.values,
         x_grid = mesh_info.return_x_grid(),
         y_grid = mesh_info.return_y_grid(),
@@ -272,7 +280,7 @@ def read_openmc_profiles(path:Path, identifiers:list[str]) -> Profiles:
     sp = openmc.StatePoint(path)
     for identifier in identifiers:
         tally = sp.get_tally(name=identifier)
-        profiles.profiles[identifier] = _read_openmc_profile(tally)
+        profiles.profiles[identifier] = _read_openmc_profile(tally, identifier)
     return profiles
 
 
@@ -330,16 +338,17 @@ def _fix_e_grid(profile: Profile):
         profile.values = profile.values[1:,:,:,:]
         profile.std_dev = profile.std_dev[1:,:,:,:]
 
-def _read_mcnp_profile(tally:h5.Group) -> Profile:
+def _read_mcnp_profile(tally:h5.Group, identifier: str) -> Profile:
     # FMESH tallies are stored in [energy, time, z, y, z] indexing
     # Time binning is not needed so slice it out
     profile = Profile(
+        identifier = identifier,
         e_grid = np.array(tally['grid_energy'][:])*10**6,
         x_grid = np.array(tally['grid_x'][:]),
         y_grid = np.array(tally['grid_y'][:]),
         z_grid = np.array(tally['grid_z'][:]),
-        values = np.array(tally['mean'][:,0,:,:,:]),
-        std_dev = np.array(tally['relative_standard_error'][:,0,:,:,:]),
+        values = np.array(tally['mean'][:,0,:,:,:]).transpose(0,3,2,1),
+        std_dev = np.array(tally['relative_standard_error'][:,0,:,:,:]).transpose(0,3,2,1),
     )
     _fix_e_grid(profile)
     return profile
@@ -349,7 +358,7 @@ def read_mcnp_profiles(path:Path, identifiers:list[str]) -> Profiles:
     with h5.File(path, 'r') as file:
         for identifier in identifiers:
             tally = file[f'results/mesh_tally/{identifier}']
-            profiles.profiles[identifier] = _read_mcnp_profile(tally)
+            profiles.profiles[identifier] = _read_mcnp_profile(tally, identifier)
     return profiles
 
 ### Functions
