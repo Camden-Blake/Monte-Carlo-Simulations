@@ -324,7 +324,7 @@ FC14 Flux vs Position
 FMESH14:n GEOM=xyz ORIGIN= -36 -36 5.7
           imesh= 36     iints= 500
           jmesh= 36     jints= 500
-          kmesh= 105.7  kints= 100
+          kmesh= 105.7
           emesh= 0.625e-6 20
           out= xdmf
 FC24 UO2 Pin Flux
@@ -336,8 +336,8 @@ FMESH24:n GEOM=xyz ORIGIN= -20.207 -20.207 5.7
           out= xdmf
 FC34 UMET Pin Flux
 FMESH34:n GEOM=xyz ORIGIN= -32.087 -32.087 5.7
-          imesh= 32.087 iints= 21
-          jmesh= 32.087 jints= 21
+          imesh= 32.087 iints= 22
+          jmesh= 32.087 jints= 22
           kmesh= 105.7
           emesh= 0.625e-6 20
           out= xdmf
